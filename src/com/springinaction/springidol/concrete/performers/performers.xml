@@ -30,4 +30,9 @@
 			</list>
 		</property>
 	</bean>
+	<bean id="carl"
+		class="com.springinaction.springidol.concrete.performers.Instrumentalist">
+	<property name="song" value="#{kenny.song}"></property>
+	<property name="instrument" ref="piano"></property>
+	</bean>
 </beans>

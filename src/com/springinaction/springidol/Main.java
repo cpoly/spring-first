@@ -7,20 +7,21 @@ import org.springframework.context.support.FileSystemXmlApplicationContext;
 import com.springinaction.springidol.exceptions.PerformanceException;
 import com.springinaction.springidol.interfaces.Performer;
 
+@SuppressWarnings("unused")
 public class Main
 {
 
-    public static void main (String[] args) throws PerformanceException
+    private static ApplicationContext ctx;
+
+	public static void main (String[] args) throws PerformanceException
     {
-        ApplicationContext ctx = new ClassPathXmlApplicationContext(new String[]
+        ctx = new ClassPathXmlApplicationContext(new String[]
         		{	"com/springinaction/springidol/concrete/performers/performers.xml",
         			"com/springinaction/springidol/concrete/instruments/instruments.xml",
         			"com/springinaction/springidol/concrete/poems/poems.xml",
         		});
-//        ApplicationContext ctx = new FileSystemXmlApplicationContext(
-//        		new String[] {""});
         		
-        Performer performer = (Performer) ctx.getBean("hank");
+        Performer performer = (Performer) ctx.getBean("carl");
         performer.perform();
         
 //        Instrumentalist instrumentalist = (Instrumentalist) ctx.getBean("kenny");
