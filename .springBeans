@@ -7,7 +7,6 @@
 	</configSuffixes>
 	<enableImports><![CDATA[false]]></enableImports>
 	<configs>
-		<config>.settings/spring-idol.xml</config>
 		<config>spring-idol.xml</config>
 	</configs>
 	<configSets>

@@ -11,4 +11,12 @@
 	<bean id="sonnet29"
 		class="com.springinaction.springidol.concrete.Sonnet29">
 	</bean>
+	<bean id="kenny"
+		class="com.springinaction.springidol.concrete.Instrumentalist">
+	<property name="song" value="Jingle Bells"></property>
+	<property name="instrument" ref="saxophone"></property>
+	</bean>
+	<bean id="saxophone"
+		class="com.springinaction.springidol.concrete.Saxophone">
+	</bean>
 </beans>
