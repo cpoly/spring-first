@@ -4,19 +4,22 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 	<bean id="duke"
-		class="com.springinaction.springidol.concrete.PoeticJuggler">
+		class="com.springinaction.springidol.concrete.performers.PoeticJuggler">
 			<constructor-arg value="15" />
 			<constructor-arg ref="sonnet29" />
 	</bean>
 	<bean id="sonnet29"
-		class="com.springinaction.springidol.concrete.Sonnet29">
+		class="com.springinaction.springidol.concrete.poems.Sonnet29">
 	</bean>
 	<bean id="kenny"
-		class="com.springinaction.springidol.concrete.Instrumentalist">
+		class="com.springinaction.springidol.concrete.performers.Instrumentalist">
 	<property name="song" value="Jingle Bells"></property>
-	<property name="instrument" ref="saxophone"></property>
+	<property name="instrument" ref="piano"></property>
 	</bean>
 	<bean id="saxophone"
-		class="com.springinaction.springidol.concrete.Saxophone">
+		class="com.springinaction.springidol.concrete.instruments.Saxophone">
+	</bean>
+	<bean id="piano"
+		class="com.springinaction.springidol.concrete.instruments.Piano">
 	</bean>
 </beans>

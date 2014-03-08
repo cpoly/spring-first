@@ -1,4 +1,4 @@
-package com.springinaction.springidol.concrete;
+package com.springinaction.springidol.concrete.poems;
 
 import com.springinaction.springidol.interfaces.Poem;
 

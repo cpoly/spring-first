@@ -1,4 +1,4 @@
-package com.springinaction.springidol.concrete;
+package com.springinaction.springidol.concrete.performers;
 
 import com.springinaction.springidol.exceptions.PerformanceException;
 import com.springinaction.springidol.interfaces.Instrument;
