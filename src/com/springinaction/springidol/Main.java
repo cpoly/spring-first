@@ -15,7 +15,7 @@ public class Main
 //                "com/springinaction/springidol/spring-idol.xml");
         ApplicationContext ctx = new FileSystemXmlApplicationContext(
                 "spring-idol.xml");
-        Performer performer = (Performer) ctx.getBean("kenny");
+        Performer performer = (Performer) ctx.getBean("duke");
         performer.perform();
         
 //        Instrumentalist instrumentalist = (Instrumentalist) ctx.getBean("kenny");
