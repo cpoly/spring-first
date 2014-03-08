@@ -5,24 +5,29 @@
 
 	<bean id="duke"
 		class="com.springinaction.springidol.concrete.performers.PoeticJuggler">
-			<constructor-arg value="15" />
-			
-			<constructor-arg name="poem">
-				<bean class="com.springinaction.springidol.concrete.poems.Sonnet29" />
-			</constructor-arg>
+		<constructor-arg value="15" />
+
+		<constructor-arg name="poem">
+			<bean class="com.springinaction.springidol.concrete.poems.Sonnet29" />
+		</constructor-arg>
 	</bean>
 	<bean id="kenny"
 		class="com.springinaction.springidol.concrete.performers.Instrumentalist">
-	<property name="song" value="Jingle Bells"></property>
-	<property name="instrument">
-		<bean class="com.springinaction.springidol.concrete.instruments.Piano" />
-	</property>
+		<property name="song" value="Jingle Bells"></property>
+		<property name="instrument">
+			<bean class="com.springinaction.springidol.concrete.instruments.Piano" />
+		</property>
 	</bean>
-	
-	
-	
-	
-	
-	
-	
+
+	<bean id="hank"
+		class="com.springinaction.springidol.concrete.performers.OneManBand">
+		<property name="instruments">
+			<list>
+				
+			<ref bean="piano" />
+			<ref bean="saxophone" />
+			<ref bean="saxophone" />
+			</list>
+		</property>
+	</bean>
 </beans>
